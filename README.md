@@ -6,4 +6,4 @@ Once downloaded, follow the steps below to run the application:
 
 Once you run the application, you should see the login page.
 Username:test
-Password:tes
+Password:test
