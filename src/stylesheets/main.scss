@@ -8,6 +8,32 @@ $bgBlueTheme:#25333d;
 	margin-top: 20px;
 }
 
+.bg-theme{
+	background-color: $greenTheme;
+}
+.header{
+	.navbar-brand{
+		color:#fff;
+	}
+}
+
+.page-home{
+	background-color: #eee;
+	height: 100vh;
+	.info-card{
+		width: 80%;
+		margin: auto;
+		margin-top: 20px;
+	}
+	.logout-link{
+		position: absolute;
+		right: 10px;
+		a{
+			color: #fff;
+		}
+	}
+}
+
 .login-container{
 	background-color: $bgBlueTheme;
 	height: 100vh;
@@ -63,4 +89,47 @@ $bgBlueTheme:#25333d;
 		border-right: 0!important;
 		border-bottom:1px solid #fff;
 	}
+}
+
+
+@-webkit-keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+  animation-duration: 800ms;
 }
