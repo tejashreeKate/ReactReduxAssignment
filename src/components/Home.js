@@ -7,25 +7,37 @@ class Home extends React.Component {
 	constructor(props){
 		super(props);
 	}
-	// componentWillReceiveProps(nextProps){
-	// 	if(nextProps.user.user.username==""){
-	// 		browserHistory.push("/")
-	// 	}
-	// }
-  // render
+  componentDidMount(){
+    let user = this.props.user.user;
+    if(user==undefined || user.username==""){
+      browserHistory.push("/");
+    }
+  }  
   render() {
   	let user = this.props.user.user;
-
     return (
       <div className="page-home">
-        <h4>Hello world! {user.username}</h4>
+          <nav className="navbar navbar-expand-lg navbar-light bg-theme header">
+            <a className="navbar-brand" href="/home">React-Redux App</a>
+            <div className="logout-link">
+              <a href="/">Logout</a>
+            </div>
+          </nav>
+          <div className="card info-card rotateIn">
+              <div className="card-body">
+                  <h4>Welcome <span className="text-primary">{user!=undefined?user.username:''}</span></h4>
+                  <p>You are now logged into the react redux app</p>
+              </div>
+          </div>
       </div>
     );
   }
 }
 
-function mapStateToProps(store) {
-  return store;
+function mapStateToProps(state) {
+  return {
+    user:state.user
+  };
 }
 
 export default connect(mapStateToProps)(Home);
