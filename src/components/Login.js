@@ -5,7 +5,7 @@ import {connect} from "react-redux"
 import {bindActionCreators} from 'redux';
 
 
-// Home page component
+// Login page component
 class Login extends React.Component {
   constructor(props){
   	super(props);
