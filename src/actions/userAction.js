@@ -1,5 +1,5 @@
 const userInfo = {
-	uname:"tejashree",
+	uname:"user",
 	pwd:"test"
 }
 /** set user data in the store*/
