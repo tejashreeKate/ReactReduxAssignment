@@ -65,7 +65,7 @@ class Login extends React.Component {
 	      				</div>
 	      				<div className="row marginTop20">
 	      					<button className="w-100 btn login-btn" onClick={this.handleSubmit.bind(this)}>Submit</button>
-	      					<p>Forgot password? (Try test, test)</p>
+	      					<p>Forgot password? (Try username - tejashree, pwd - test)</p>
 	      				</div>
       				</div>
       			</div>
