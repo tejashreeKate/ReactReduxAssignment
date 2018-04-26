@@ -11,5 +11,5 @@ Once downloaded, follow the steps below to run the application:
 
 Once you run the application, you should see the login page.
 Enter the credentials below to get into the app 
-Username:tejashree
+Username:user
 Password:test
